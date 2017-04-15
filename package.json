@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start": "yarn build && node index.js",
+    "heroku-postbuild": "webpack",
     "eslint": "eslint src/"
   },
   "repository": "https://github.com/BSUIR-WantToWork/wanttowork-ui.git",
