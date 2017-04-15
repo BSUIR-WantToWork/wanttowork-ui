@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "start": "yarn build && node index.js",
     "eslint": "eslint src/"
   },
   "repository": "https://github.com/BSUIR-WantToWork/wanttowork-ui.git",
@@ -20,6 +20,9 @@
     "Yury Rybak <yury.rybak.bsuir@gmail.com>"
   ],
   "private": true,
+  "engines": {
+    "node": "7.9"
+  },
   "license": "MIT",
   "dependencies": {
     "angular": "^1.6.4",
@@ -34,6 +37,9 @@
     "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
+    "koa": "^2.2.0",
+    "koa-connect-history-api-fallback": "^0.3.1",
+    "koa-static": "^3.0.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
